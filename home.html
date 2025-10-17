@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial Courses | Learn to Code</title>
+  <style>
+    /* Reset & base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Header / Hero */
+    header {
+      background: linear-gradient(135deg, #4a90e2, #50c9c3);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Course grid */
+    .courses-container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .course-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .course-card .course-image {
+      height: 160px;
+      overflow: hidden;
+    }
+    .course-card .course-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .course-card .course-content {
+      padding: 16px;
+    }
+    .course-card h3 {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+      color: #333;
+    }
+    .course-card p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 16px;
+    }
+    .course-card .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      background-color: #4a90e2;
+      color: white;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .course-card .btn:hover {
+      background-color: #4178c0;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #ddd;
+      padding: 24px 20px;
+      text-align: center;
+    }
+    footer small {
+      display: block;
+      margin-top: 8px;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Learn Programming & Tech Skills</h1>
+    <p>Master Python, Java, Android, Data Science, Machine Learning, SQL, Software Testing, and more — through easy-to-follow tutorials and hands-on projects.</p>
+  </header>
+
+  <section class="courses-container">
+    <div class="courses-grid">
+      <!-- Course Card: Python -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="C:\Users\ismat\Documents\Notes Folder\python.webp" alt="Python Course">
+        </div>
+        <div class="course-content">
+          <h3>Python Programming</h3>
+          <p>Learn Python from basics to advanced — data structures, web dev, automation, scripting, and more.</p>
+          <a href="#python" class="btn">Start at $20</a>
+        </div>
+      </div>
+
+      <!-- Java -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="C:\Users\ismat\Documents\Notes Folder\java.webp" alt="Java Course">
+        </div>
+        <div class="course-content">
+          <h3>Java Programming</h3>
+          <p>Dive into Java core, OOP, frameworks, JVM internals, and enterprise-level applications.</p>
+          <a href="#java" class="btn">Start at $25</a>
+        </div>
+      </div>
+
+      <!-- Android -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="C:\Users\ismat\Documents\Notes Folder\android_programming.jpg" alt="Android Course">
+        </div>
+        <div class="course-content">
+          <h3>Android Development</h3>
+          <p>Build mobile apps using Kotlin/Java, Android SDK, UI/UX design, and app deployment.</p>
+          <a href="#android" class="btn">Start at $18</a>
+        </div>
+      </div>
+
+      <!-- Data Science -->
+      <div class="course-card">
+        <div the="course-image">
+          <img src="C:\Users\ismat\Documents\Notes Folder\datascience.webp" alt="Data Science Course">
+        </div>
+        <div class="course-content">
+          <h3>Data Science</h3>
+          <p>Work with data analysis, visualization, statistics, pandas, NumPy, and real-world datasets.</p>
+          <a href="#datascience" class="btn">Start at $50</a>
+        </div>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="C:\Users\ismat\Documents\Notes Folder\machine_learning.jpg" alt="Machine Learning Course">
+        </div>
+        <div class="course-content">
+          <h3>Machine Learning</h3>
+          <p>Understand algorithms like regression, classification, clustering, neural networks, and more.</p>
+          <a href="#ml" class="btn">Start at $45</a>
+        </div>
+      </div>
+
+      <!-- SQL / Database -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="C:\Users\ismat\Documents\Notes Folder\sql.jpg" alt="SQL Course">
+        </div>
+        <div class="course-content">
+          <h3>SQL & Databases</h3>
+          <p>Master relational databases, queries, joins, indexes, optimization and transactions.</p>
+          <a href="#sql" class="btn">Start at $20</a>
+        </div>
+      </div>
+
+      <!-- Software Testing -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="C:\Users\ismat\Documents\Notes Folder\software_testing.webp" alt="Software Testing Course">
+        </div>
+        <div class="course-content">
+          <h3>Software Testing</h3>
+          <p>Explore manual testing, automation (Selenium, Appium), unit testing, test planning & tools.</p>
+          <a href="#testing" class="btn">Start at $22</a>
+        </div>
+      </div>
+
+      <!-- Cloud Computing -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="C:\Users\ismat\Documents\Notes Folder\cloud_computing.webp" alt="Cloud Computing">
+        </div>
+        <div class="course-content">
+          <h3>Cloud Computing</h3>
+          <p>Learn AWS, Azure, and Google Cloud fundamentals — deployment, storage, networking, and security.</p>
+          <a href="#cloud" class="btn">Start at $30</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ismat_Tutorial.com &middot; All rights reserved.  
+    <small>Designed with ❤️ by Khan Ismat</small>
+  </footer>
+
+</body>
+</html>
